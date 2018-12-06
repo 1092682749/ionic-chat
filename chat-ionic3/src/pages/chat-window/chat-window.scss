@@ -1,0 +1,103 @@
+page-chat-window {
+  button {
+    box-shadow: none;
+  }
+  #biaoqing {
+    background: url("../../assets/imgs/biaoqing.svg");
+    background-size: 100% 100%;
+  }
+  .box{
+    left: 32px;
+    vertical-align: center;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    width: auto;
+    max-width: 70%;
+    min-height: 40px;
+    //min-height: 52px;
+    background: #1bb9d8;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+  }
+  .box:before{
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 0;
+          right: 100%;
+          top: 10px;
+          border-top: 6px solid transparent;
+          border-right: 6px solid #1bb9d8;
+          border-bottom: 6px solid transparent;
+  }
+  .box span{
+    //position: absolute;
+    //top: 0;
+    //bottom: 0;
+    //left: 0;
+    //right: 0;
+    //margin: auto;
+    display: inline;
+    word-wrap: break-word;
+    word-break: normal;
+    overflow-wrap: break-word
+    //max-width: 90%;
+  }
+  .Mybox{
+    position: relative;
+    //position: absolute;
+    float: right;
+    right: 32px;
+    vertical-align: center;
+    padding: 10px;
+    display: inline-block;
+    width: auto;
+    max-width: 70%;
+    min-height: 40px;
+    //min-height: 52px;
+    background: #1bb9d8;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+  }
+  .Mybox:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 100%;
+    top: 10px;
+    border-top: 6px solid transparent;
+    border-left: 6px solid #1bb9d8;
+    border-bottom: 6px solid transparent;
+  }
+  .Mybox span{
+    //position: absolute;
+    //top: 0;
+    //bottom: 0;
+    //left: 0;
+    //right: 0;
+    //margin: auto;
+    display: inline;
+    word-wrap: break-word;
+    word-break: normal;
+    overflow-wrap: break-word
+    //max-width: 90%;
+  }
+  .leftface {
+    position: absolute;
+    left: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  .rightface{
+    position: absolute;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,40 @@
+<!--
+  Generated template for the ChatWindowPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>chatWindow</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content id="chatContent" padding>
+  <div *ngFor="let msg of msgList let i = index" style="margin-bottom: 10px;overflow: hidden;">
+    <img [class]="msg.sendname == '123'? 'leftface' : 'rightface'" src="../../assets/imgs/biaoqing.svg">
+    <div [class]="msg.sendname == '123'? 'box' : 'Mybox'">
+      <span>{{msg.content}}</span>
+    </div>
+    <!--<div style="clear: both"></div>-->
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar style="display: flex;justify-content: space-around;text-align: center">
+    <button (click)="changeVoice()" ion-button style="margin-right:10px;flex:1;width: 30px;height: 30px;border-radius: 50%;vertical-align: middle;box-shadow: none" ion-button>
+      <ion-icon name="mic"></ion-icon>
+    </button>
+    <input [(ngModel)]="currentContent" *ngIf="isText" type="text" style="flex:5;width:50%;height:35px;border-radius: 5px;vertical-align: middle;outline: none;border: none;box-shadow: none">
+    <div *ngIf="!isText" style="line-height:35px;display:inline-block;background-color:#d9dfd8;flex:5;width:50%;height:35px;border-radius: 5px;vertical-align: middle;outline: none;border: none;box-shadow: none;text-align: center">
+      按住说话
+    </div>
+    <button id="biaoqing" ion-button style="margin-left:5px;flex:1;width: 30px;height: 30px;border-radius: 50%;vertical-align: middle;box-shadow: none" ion-button>
+    </button>
+    <button (click)="send()" ion-button style="margin-left:5px;flex:1;width: 52px;height: 30px;border-radius: 5px;vertical-align: middle" ion-button>
+      发送
+    </button>
+  </ion-toolbar>
+</ion-footer>
